@@ -1,0 +1,10 @@
+struct tStudentInfo
+{
+	char szName [11];
+	int32_t nAge;
+	char szGender [11];
+	int32_t nGrade;
+	int32_t nClass;
+	char szTelNum [17];
+	char szCreatedDate [15];
+};

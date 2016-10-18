@@ -1,0 +1,107 @@
+10748|2016-10-07 10:10:50,874|table_base.py|48|Traceback (most recent call last):
+  File "E:\code\pypro\sqlparser\table_base.py", line 45, in _get_dumps_dict
+    with open(conf.STRUCT_PICKLE_FILE, 'rb') as stf:
+IOError: [Errno 2] No such file or directory: 'E:\\code\\pypro\\sqlparser\\tables_struct.pickle'
+
+10260|2016-10-07 10:14:35,436|table_base.py|48|Traceback (most recent call last):
+  File "E:/code/pypro/sqlparser\table_base.py", line 45, in _get_dumps_dict
+    with open(conf.STRUCT_PICKLE_FILE, 'rb') as stf:
+IOError: [Errno 2] No such file or directory: 'E:\\code\\pypro\\sqlparser\\tables_struct.pickle'
+
+14492|2016-10-07 10:39:01,323|table_base.py|48|Traceback (most recent call last):
+  File "E:\code\pypro\sqlparser\table_base.py", line 45, in _get_dumps_dict
+    with open(conf.STRUCT_PICKLE_FILE, 'rb') as stf:
+IOError: [Errno 2] No such file or directory: 'E:\\code\\pypro\\sqlparser\\tables_struct.pickle'
+
+15744|2016-10-07 10:39:21,562|table_base.py|48|Traceback (most recent call last):
+  File "E:/code/pypro/sqlparser\table_base.py", line 45, in _get_dumps_dict
+    with open(conf.STRUCT_PICKLE_FILE, 'rb') as stf:
+IOError: [Errno 2] No such file or directory: 'E:\\code\\pypro\\sqlparser\\tables_struct.pickle'
+
+14476|2016-10-07 10:53:01,845|table_base.py|48|Traceback (most recent call last):
+  File "E:\code\pypro\sqlparser\table_base.py", line 45, in _get_dumps_dict
+    with open(conf.STRUCT_PICKLE_FILE, 'rb') as stf:
+IOError: [Errno 2] No such file or directory: 'E:\\code\\pypro\\sqlparser\\tables_struct.pickle'
+
+12112|2016-10-07 11:03:03,446|table_base.py|48|Traceback (most recent call last):
+  File "E:\code\pypro\sqlparser\table_base.py", line 45, in _get_dumps_dict
+    with open(conf.STRUCT_PICKLE_FILE, 'rb') as stf:
+IOError: [Errno 2] No such file or directory: 'E:\\code\\pypro\\sqlparser\\tables_struct.pickle'
+
+21452|2016-10-07 11:27:22,233|table_struct.py|163|struct_student_info_t.txt already exists
+6516|2016-10-15 14:31:56,316|table_struct.py|162|struct_student_info_t.txt already exists
+9884|2016-10-16 10:58:06,934|table_manage.py|55|Traceback (most recent call last):
+  File "E:\code\pypro\sqlparser\tablestruct\table_manage.py", line 52, in _get_dumps_dict
+    with open(sqlparser.conf.STRUCT_PICKLE_FILE, 'rb') as stf:
+IOError: [Errno 2] No such file or directory: 'E:\\code\\pypro\\sqlparser\\tables_struct.pickle'
+
+7112|2016-10-16 11:06:48,648|table_manage.py|55|Traceback (most recent call last):
+  File "E:\code\pypro\sqlparser\tablestruct\table_manage.py", line 52, in _get_dumps_dict
+    with open(sqlparser.conf.STRUCT_PICKLE_FILE, 'rb') as stf:
+IOError: [Errno 2] No such file or directory: 'E:\\code\\pypro\\sqlparser\\tables_struct.pickle'
+
+9016|2016-10-16 11:08:30,654|table_manage.py|55|Traceback (most recent call last):
+  File "E:\code\pypro\sqlparser\tablestruct\table_manage.py", line 52, in _get_dumps_dict
+    with open(sqlparser.conf.STRUCT_PICKLE_FILE, 'rb') as stf:
+IOError: [Errno 2] No such file or directory: 'E:\\code\\pypro\\sqlparser\\tables_struct.pickle'
+
+4104|2016-10-16 11:11:13,009|table_manage.py|55|Traceback (most recent call last):
+  File "E:\code\pypro\sqlparser\tablestruct\table_manage.py", line 52, in _get_dumps_dict
+    with open(sqlparser.conf.STRUCT_PICKLE_FILE, 'rb') as stf:
+IOError: [Errno 2] No such file or directory: 'E:\\code\\pypro\\sqlparser\\tables_struct.pickle'
+
+9876|2016-10-16 11:12:58,256|table_manage.py|55|Traceback (most recent call last):
+  File "E:\code\pypro\sqlparser\tablestruct\table_manage.py", line 52, in _get_dumps_dict
+    with open(sqlparser.conf.STRUCT_PICKLE_FILE, 'rb') as stf:
+IOError: [Errno 2] No such file or directory: 'E:\\code\\pypro\\sqlparser\\tables_struct.pickle'
+
+7252|2016-10-16 11:14:42,832|table_manage.py|55|Traceback (most recent call last):
+  File "E:\code\pypro\sqlparser\tablestruct\table_manage.py", line 52, in _get_dumps_dict
+    with open(sqlparser.conf.STRUCT_PICKLE_FILE, 'rb') as stf:
+IOError: [Errno 2] No such file or directory: 'E:\\code\\pypro\\sqlparser\\tables_struct.pickle'
+
+8996|2016-10-16 11:16:59,763|table_manage.py|55|Traceback (most recent call last):
+  File "E:\code\pypro\sqlparser\tablestruct\table_manage.py", line 52, in _get_dumps_dict
+    with open(sqlparser.conf.STRUCT_PICKLE_FILE, 'rb') as stf:
+IOError: [Errno 2] No such file or directory: 'E:\\code\\pypro\\sqlparser\\tables_struct.pickle'
+
+3092|2016-10-16 14:05:15,414|table_manage.py|55|Traceback (most recent call last):
+  File "E:\code\pypro\sqlparser\tablestruct\table_manage.py", line 52, in _get_dumps_dict
+    with open(sqlparser.conf.STRUCT_PICKLE_FILE, 'rb') as stf:
+IOError: [Errno 2] No such file or directory: 'E:\\code\\pypro\\sqlparser\\tables_struct.pickle'
+
+3784|2016-10-16 14:15:54,648|table_manage.py|55|Traceback (most recent call last):
+  File "E:\code\pypro\sqlparser\tablestruct\table_manage.py", line 52, in _get_dumps_dict
+    with open(sqlparser.conf.STRUCT_PICKLE_FILE, 'rb') as stf:
+IOError: [Errno 2] No such file or directory: 'E:\\code\\pypro\\sqlparser\\tables_struct.pickle'
+
+5744|2016-10-16 22:04:53,302|table_struct.py|165|struct_student_info_t.txt already exists
+8984|2016-10-16 22:05:28,173|table_struct.py|165|struct_student_info_t.txt already exists
+5776|2016-10-16 22:05:36,759|table_struct.py|165|struct_student_info_t.txt already exists
+4476|2016-10-16 22:15:19,355|table_struct.py|165|struct_student_info_t.txt already exists
+1384|2016-10-16 22:15:42,670|table_struct.py|165|struct_student_info_t.txt already exists
+2904|2016-10-16 22:16:44,302|table_struct.py|165|struct_student_info_t.txt already exists
+6592|2016-10-16 22:16:50,632|table_struct.py|165|struct_student_info_t.txt already exists
+7956|2016-10-16 22:19:52,687|table_struct.py|165|struct_student_info_t.txt already exists
+8868|2016-10-16 22:20:18,015|table_struct.py|165|struct_student_info_t.txt already exists
+10112|2016-10-16 22:22:27,111|table_struct.py|165|struct_student_info_t.txt already exists
+9668|2016-10-16 22:22:40,812|table_struct.py|165|struct_student_info_t.txt already exists
+6980|2016-10-16 22:48:01,391|table_struct.py|165|struct_student_info_t.txt already exists
+3740|2016-10-16 22:50:40,483|table_struct.py|165|struct_student_info_t.txt already exists
+9340|2016-10-16 22:51:51,017|table_struct.py|165|struct_student_info_t.txt already exists
+9232|2016-10-16 23:02:14,062|table_struct.py|165|struct_student_info_t.txt already exists
+5776|2016-10-16 23:02:39,542|table_struct.py|165|struct_student_info_t.txt already exists
+8432|2016-10-16 23:04:15,184|table_struct.py|165|struct_student_info_t.txt already exists
+9208|2016-10-16 23:09:44,792|table_struct.py|165|struct_student_info_t.txt already exists
+8552|2016-10-16 23:10:24,165|table_struct.py|165|struct_student_info_t.txt already exists
+10064|2016-10-16 23:11:03,096|table_struct.py|165|struct_student_info_t.txt already exists
+9232|2016-10-16 23:13:48,434|table_struct.py|165|struct_student_info_t.txt already exists
+7148|2016-10-18 20:26:36,000|table_struct.py|165|struct_student_info_t.txt already exists
+5416|2016-10-18 20:27:16,362|table_struct.py|165|struct_student_info_t.txt already exists
+6192|2016-10-18 20:28:08,426|table_struct.py|165|struct_student_info_t.txt already exists
+2120|2016-10-18 20:28:31,868|table_struct.py|165|struct_student_info_t.txt already exists
+7652|2016-10-18 20:28:42,595|table_struct.py|165|struct_student_info_t.txt already exists
+6480|2016-10-18 20:45:08,043|table_struct.py|165|struct_student_info_t.txt already exists
+6852|2016-10-18 20:45:35,569|table_struct.py|165|struct_student_info_t.txt already exists
+6396|2016-10-18 20:46:07,533|table_struct.py|165|struct_student_info_t.txt already exists
+2488|2016-10-18 20:49:17,664|table_struct.py|165|struct_student_info_t.txt already exists

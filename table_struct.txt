@@ -1,0 +1,10 @@
+create table basic.student_info_t
+(
+  Name Varchar2(10) not null,
+  Age Number(9) not null,
+  Gender Varchar2(10) not null,
+  Grade Number(9) not null,
+  Class Number(9) not null,
+  Tel_NUM Varchar2(16) not null,
+  Created_Date Date not null,
+);
