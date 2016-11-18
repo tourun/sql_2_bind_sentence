@@ -28,9 +28,10 @@ class TableStructDic(object):
         """
         if not self._struct:
             # _struct不存在时，重新构造
-            self._struct['table_name'] = table_name
+            # table_name/struct_name/file_name 几个关键字的key使用$前缀，与列名区分
+            self._struct['$table_name'] = table_name
             struct_name = self._get_struct_name(table_name, from_column=False)
-            self._struct['struct_name'] = struct_name
+            self._struct['$struct_name'] = struct_name
             # 解析除过create table的句子
             self._parse_each_line(column_list[1:])
             
@@ -74,8 +75,8 @@ class TableStructDic(object):
         如'region_id number(10)'被转换为('lRegionId', 'int64_t', '', 'number', 10)
         而'state varchar2(3)'被转换为('szState', 'char', '[4]', varchar2, 3)
         """
-        file_name = 'struct_' + self._struct['table_name'] + '.txt'
-        self._struct['file_name'] = file_name
+        file_name = 'struct_' + self._struct['$table_name'] + '.txt'
+        self._struct['$file_name'] = file_name
 
         field_name = self._get_struct_name(col_name)
         field_type = ''
@@ -110,16 +111,16 @@ class TableStructDic(object):
         file_path = os.path.normpath(
             os.path.join(
                 conf.STRUCT_DIR,
-                self._struct['file_name']
+                self._struct['$file_name']
             )
         )
         with open(file_path, 'wb') as tf:
             lines = ''
-            lines += 'struct ' + self._struct['struct_name'] + '\r\n'
+            lines += 'struct ' + self._struct['$struct_name'] + '\r\n'
             lines += '{' + '\r\n'
 
             for key, value in self._struct.items():
-                if key in ['table_name', 'struct_name', 'file_name']:
+                if key in ['$table_name', '$struct_name', '$file_name']:
                     continue
                 lines += '\t'
                 field_name, field_type, field_length = \

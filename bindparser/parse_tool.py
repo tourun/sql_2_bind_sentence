@@ -56,6 +56,12 @@ class ParseTool(object):
                     self._table_name
             raise Exception(error)
 
+    def _get_columns(self):
+        """
+        返回表结构中的column列表
+        """
+        return [_ for _ in self._tb_struct.keys() if not _.startswith('$')]
+
     def parse_sql(self):
         """
         override
@@ -95,7 +101,7 @@ class ParseTool(object):
         col_name, col_type, col_length = \
             column_info[0], column_info[3], column_info[4]
 
-        struct_name = self._tb_struct['struct_name']
+        struct_name = self._tb_struct['$struct_name']
 
         if col_type == 'number':
             (str_col_type, str_col_len) = ('FIELD_INT32', 'sizeof(int32_t)') \
@@ -162,6 +168,11 @@ class SelectParser(ParseTool):
         2对where子句中的绑定语句进行分解，生成对应的bindIn语句
         """
         bind_out_list = self.sql[len("select"):self._pos_from].split(',')
+
+        if len(bind_out_list) == 1 and bind_out_list[0].strip() == '*':
+            # select * from table where condition=xxx
+            bind_out_list = self._get_columns()
+
         self.gen_sentences(bind_out_list, bind_in=False)
         if self._pos_where != -1:
             # sql中有where子句，需要对where子句中的条件进行bind_in

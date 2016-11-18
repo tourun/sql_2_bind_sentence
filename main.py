@@ -23,7 +23,7 @@ if __name__ == '__main__':
     obj.create()
 
     sql_list = [
-        'select name, age, class from student_info_t where gender=:v1',
+        'select * from student_info_t where gender=:v1',
         'delete from student_info_t where name=:v1 and class=:v2',
         'update student_info_t set age=:v1, grade=:v2, class=:v3 where name=:v4',
         'insert into student_info_t(name, age, gender, grade, class, tel_num, create_date) values(:v1, :v2, "male", :v3, :v4, :v5, sysdate)',
